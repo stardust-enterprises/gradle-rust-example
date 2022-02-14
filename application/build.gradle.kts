@@ -5,9 +5,13 @@ plugins {
     id("com.github.johnrengelman.shadow") version "5.0.0"
 }
 
+val programMainClass = "fr.stardustenterprises.rust.tests.Main"
+
 application {
-    mainClassName = "fr.stardustenterprises.rust.tests.Main"
-    this.mainClass.set(mainClassName)
+    // deprecated, but needed for shadowJar (idk why either)
+    this.mainClassName = programMainClass
+
+    this.mainClass.set(programMainClass)
 }
 
 dependencies {
