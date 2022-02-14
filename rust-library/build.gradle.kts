@@ -3,7 +3,7 @@ plugins {
 }
 
 rust {
+    command.set("cargo")
+
     targets += defaultTarget()
 }
-
-tasks
