@@ -7,5 +7,5 @@ rust {
     command.set("cargo")
 
     targets += defaultTarget()
-    targets += "x86_64-pc-windows-gnu" to "test.dll"
+    targets += "x86_64-pc-windows-gnu" to "test64.dll"
 }

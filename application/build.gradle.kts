@@ -15,7 +15,7 @@ application {
 }
 
 dependencies {
-    implementation("fr.stardustenterprises", "yanl", "0.7.0")
+    implementation("fr.stardustenterprises", "yanl", "0.7.1")
     rust(project(":rust-library"))
 }
 
