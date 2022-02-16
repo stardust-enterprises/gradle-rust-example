@@ -1,7 +1,7 @@
 plugins {
     kotlin("jvm") version "1.6.10"
     application
-    id("fr.stardustenterprises.rust.importer") version "3.0.0-SNAPSHOT"
+    id("fr.stardustenterprises.rust.importer") version "3.1.1"
     id("com.github.johnrengelman.shadow") version "5.0.0"
 }
 
