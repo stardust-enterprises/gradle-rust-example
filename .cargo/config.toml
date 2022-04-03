@@ -1,8 +1,6 @@
 # This is only required with osxcross to cross-compile
 # from linux to macOS, and is not covered (yet) by gradle-rust.
 
-# also this isn't used anywhere iirc i was just testing stuff
-
 [target.x86_64-apple-darwin]
 linker = "x86_64-apple-darwin20.4-clang"
 ar = "x86_64-apple-darwin20.4-ar"
