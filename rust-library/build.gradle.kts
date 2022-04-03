@@ -30,14 +30,22 @@ rust {
         }
 
         // Custom target with different params than default
-//        create("macOS") {
-//            target = "x86_64-apple-darwin"
-//            outputName = "libtest64.dylib"
-//
-//            release = false
-//
-//            // Fallback to cargo
-//            command = "cargo"
-//        }
+        create("macOS-x86") {
+            target = "x86_64-apple-darwin"
+            outputName = "libtest64.dylib"
+
+            // Use other command for this target
+            command = "cargo"
+            env += "CC" to "o64-clang"
+            env += "CXX" to "o64-clang++"
+        }
+
+        create("macOS-aarch64") {
+            target = "aarch64-apple-darwin"
+            outputName = "libtest64.dylib"
+            command = "cargo"
+            env += "CC" to "oa64-clang"
+            env += "CXX" to "oa64-clang++"
+        }
     }
 }
