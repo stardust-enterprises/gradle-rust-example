@@ -10,7 +10,7 @@ rust {
     command.set("cross")
 
     // this will make cargo install automatically the required targets
-    // `rustup targets add x86_32-pc-windows-gnu`
+    // `rustup targets add x86_64-pc-windows-gnu`
     cargoInstallTargets.set(true)
 
     // Adding a simple target with default options
