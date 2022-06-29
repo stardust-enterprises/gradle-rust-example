@@ -3,11 +3,11 @@
 plugins {
     kotlin("jvm") version "1.6.10"
     application
-    id("fr.stardustenterprises.rust.importer") version "3.2.0"
+    id("fr.stardustenterprises.rust.importer")
     id("com.github.johnrengelman.shadow") version "5.0.0"
 }
 
-val programMainClass = "fr.stardustenterprises.rust.tests.Main"
+val programMainClass = "fr.stardustenterprises.rust.test.Main"
 
 application {
     // deprecated, but needed for shadowJar (idk why either)
@@ -17,7 +17,8 @@ application {
 }
 
 dependencies {
-    implementation("fr.stardustenterprises", "yanl", "0.7.1")
+    implementation("fr.stardustenterprises", "yanl", "0.7.4")
+    implementation("fr.stardustenterprises", "plat4k", "1.6.2")
     rust(project(":rust-library"))
 }
 

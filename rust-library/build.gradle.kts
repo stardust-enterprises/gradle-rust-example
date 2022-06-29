@@ -1,5 +1,5 @@
 plugins {
-    id("fr.stardustenterprises.rust.wrapper") version "3.2.0"
+    id("fr.stardustenterprises.rust.wrapper")
 }
 
 rust {
@@ -15,6 +15,7 @@ rust {
 
     // Adding a simple target with default options
     targets += target("i686-pc-windows-gnu", "test.dll")
+    targets += target("i686-unknown-linux-gnu", "libtest.so")
 
     // Defining per-targets
     targets {
@@ -43,6 +44,7 @@ rust {
         create("macOS-aarch64") {
             target = "aarch64-apple-darwin"
             outputName = "libtest64.dylib"
+
             command = "cargo"
             env += "CC" to "oa64-clang"
             env += "CXX" to "oa64-clang++"
