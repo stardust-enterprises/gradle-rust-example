@@ -15,6 +15,8 @@ rust {
 
     // Adding a simple target with default options
     targets += target("i686-pc-windows-gnu", "test.dll")
+//    targets += target("i686-pc-windows-msvc", "test.dll")
+
     targets += target("i686-unknown-linux-gnu", "libtest.so")
 
     // Defining per-targets
@@ -27,6 +29,7 @@ rust {
         // Creates a target with a custom file output
         create("win64") {
             target = "x86_64-pc-windows-gnu"
+//            target = "x86_64-pc-windows-msvc"
             outputName = "test64.dll"
         }
 
