@@ -7,7 +7,7 @@ rust {
     release.set(true)
 
     // you can also use tools like "cross"
-    command.set("cross")
+    command.set("cargo")
 
     // this will make cargo install automatically the required targets
     // `rustup targets add x86_64-pc-windows-gnu`
