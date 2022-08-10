@@ -28,7 +28,7 @@ rust {
 
         // Creates a named target with a custom file output
         create("win64") {
-            target = "x86_64-pc-windows-msvc"
+            target = "x86_64-pc-windows-gnu"
             outputName = "test64.dll"
         }
 
