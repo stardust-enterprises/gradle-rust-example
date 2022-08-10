@@ -1,5 +1,5 @@
 plugins {
-    id("fr.stardustenterprises.rust.wrapper") version "3.2.4" apply false
+    id("fr.stardustenterprises.rust.wrapper") version "3.2.5" apply false
 }
 
 subprojects {

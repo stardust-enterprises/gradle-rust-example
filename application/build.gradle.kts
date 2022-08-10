@@ -1,7 +1,7 @@
 @file:Suppress("DEPRECATION")
 
 plugins {
-    kotlin("jvm") version "1.6.10"
+    kotlin("jvm") version "1.7.10"
     application
     id("fr.stardustenterprises.rust.importer")
     id("com.github.johnrengelman.shadow") version "5.0.0"

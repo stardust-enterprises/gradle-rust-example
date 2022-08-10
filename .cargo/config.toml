@@ -8,3 +8,13 @@ ar = "x86_64-apple-darwin20.4-ar"
 [target.aarch64-apple-darwin]
 linker = "aarch64-apple-darwin20.4-clang"
 ar = "aarch64-apple-darwin20.4-ar"
+
+# Testing only
+
+[target.x86_64-pc-windows-msvc]
+linker = "lld"
+rustflags = [
+    "-Lnative=/home/xtrm/.local/share/xwin/crt/lib/x86_64",
+    "-Lnative=/home/xtrm/.local/share/xwin/sdk/lib/um/x86_64",
+    "-Lnative=/home/xtrm/.local/share/xwin/sdk/lib/ucrt/x86_64"
+]
